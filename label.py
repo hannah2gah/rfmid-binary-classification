@@ -27,6 +27,3 @@ def assign_label(csv_path, image_path, sep=','):
     target_labels = data_labels.iloc[:,-1]
     data_labels['image_path'] =  data_labels.apply(lambda row: (image_path + str(row['ID']) + '.png'), axis=1)
     return data_labels, target_labels
-
-def 
-
